@@ -3,27 +3,32 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>counter - p5.js sketch</title>
+        <link type="text/css" rel="stylesheet" href="style.css" />
+        <title>Counter</title>
         <style>
             * {
                 margin: 0px;
                 padding: 0px;
-                box-sizing: border-box;
+                -webkit-user-select: none; /* Safari */
+                -ms-user-select: none; /* IE 10 and IE 11 */
+                user-select: none; /* Standard syntax */
             }
             body {
-                background-color: #777;
+                width: 100vw;
+                height: 100vh;
+                margin: 0;
+                padding: 0;
+                background-color: #000000;
             }
             main {
                 width: 100vw;
-                height: 100vh;
+                height: 90vh;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: start;
                 align-items: center;
-            }
-            .p5Canvas {
-                border: 1px solid white;
-                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+                margin: 0;
+                padding: 0;
             }
         </style>
     </head>
