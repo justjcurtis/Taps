@@ -4,37 +4,17 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link type="text/css" rel="stylesheet" href="style.css" />
-        <title>Taps</title>
-        <style>
-            * {
-                margin: 0px;
-                padding: 0px;
-                -webkit-user-select: none; /* Safari */
-                -ms-user-select: none; /* IE 10 and IE 11 */
-                user-select: none; /* Standard syntax */
-            }
-            body {
-                width: 100vw;
-                height: 100vh;
-                margin: 0;
-                padding: 0;
-                background-color: #000000;
-            }
-            main {
-                width: 100vw;
-                height: 90vh;
-                display: flex;
-                flex-direction: column;
-                justify-content: start;
-                align-items: center;
-                margin: 0;
-                padding: 0;
-            }
-        </style>
-    </head>
-    <body>
-        <main></main>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
         <script src="sketch.js"></script>
+        <title>Taps</title>
+    </head>
+    <body>
+        <main>
+
+            <div class="btnContainer">
+                <button id="jsonBtn" class="btn" onclick="downloadJSON()">Download JSON</button>
+                <button id="csvBtn" class="btn" onclick="exportTapsToCSV()">Export Taps to CSV</button>
+            </div>
+        </main>
     </body>
 </html>
