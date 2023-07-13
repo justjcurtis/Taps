@@ -9,7 +9,7 @@ function setup() {
 
 const min = 0;
 const max = 100;
-const step = 20;
+const step = 10;
 let bg = min;
 let touching = false;
 const taps = [];
